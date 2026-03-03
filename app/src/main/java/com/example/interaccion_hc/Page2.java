@@ -53,7 +53,12 @@ public class Page2 extends AppCompatActivity implements View.OnClickListener {
             res = fn - sn;
 
         } else if (v.getId() == R.id.buttonDiv) {
-            res = fn / sn;
+            if(sn != 0){
+                res = fn / sn;
+            }else {
+                this.tRes.setText("No se puede dividir entre 0");
+                return;
+            }
 
         }else if (v.getId() == R.id.buttonMult) {
             res = fn * sn;
