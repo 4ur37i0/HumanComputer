@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if(usuario.equals("admin")){
                 if(pass.equals("password")){
                     this.entrar.setText("Entrar");
-                    Intent intent = new Intent(MainActivity.this, Page2.class);
+                    Intent intent = new Intent(MainActivity.this, Inicio.class);
                     startActivity(intent);
                 }
                 else{
